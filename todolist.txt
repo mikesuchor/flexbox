@@ -6,7 +6,7 @@ To do list:
 [X] Include all flex property values as yellow code snippets
 [X] Add highlights to yellow code snippets on hover
 [X] Write a short description about the project in the github readme
-[ ] Add JS onclick events to add click sounds, highlights and change the color of yellow code snippets
+[X] Add JS onclick events to highlights and change the color of yellow code snippets
 [ ] Change Display section code to display: inline-flex and replace CSS transition effect with JS
 [ ] Rewrite section <p> code to explain each flex property better
 [ ] Add a navigation bar
