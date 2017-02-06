@@ -77,6 +77,8 @@ flexdircolrev.addEventListener("click", function () {
     CONTAINER3.style.flexDirection = "column-reverse";
 });
 
+/* Flex-Wrap Section */
+
 flexwrapno.addEventListener("click", function () {
     flexwrap.style.color = "#ffffff";
     flexwraprev.style.color = "#ffffff";
@@ -97,6 +99,8 @@ flexwraprev.addEventListener("click", function () {
     this.style.color = "#ffd700";
     CONTAINER4.style.flexWrap = "wrap-reverse";
 });
+
+/* Justify-Content Section */
 
 justifycontentstart.addEventListener("click", function () {
     justifycontentcenter.style.color = "#ffffff";
@@ -143,12 +147,18 @@ justifycontentaround.addEventListener("click", function () {
     CONTAINER9.style.justifyContent = "space-around";
 });
 
+/* Align-Items Section */
+
 alignitemsstretch.addEventListener("click", function () {
     alignitemsstart.style.color = "#ffffff";
     alignitemscenter.style.color = "#ffffff";
     alignitemsend.style.color = "#ffffff";
     alignitemsbase.style.color = "#ffffff";
     this.style.color = "#ffd700";
+    CONTAINER10.querySelector(".box1").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box2").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box4").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box6").style.fontSize = "50px";
     CONTAINER10.style.alignItems = "stretch";
 });
 
@@ -158,6 +168,10 @@ alignitemsstart.addEventListener("click", function () {
     alignitemsend.style.color = "#ffffff";
     alignitemsbase.style.color = "#ffffff";
     this.style.color = "#ffd700";
+    CONTAINER10.querySelector(".box1").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box2").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box4").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box6").style.fontSize = "50px";
     CONTAINER10.style.alignItems = "flex-start";
 });
 
@@ -166,7 +180,11 @@ alignitemscenter.addEventListener("click", function () {
     alignitemsstart.style.color = "#ffffff";
     alignitemsend.style.color = "#ffffff";
     alignitemsbase.style.color = "#ffffff";
-    this.style.color = "#ffd700";
+    this.style.color = "#ffd700";    
+    CONTAINER10.querySelector(".box1").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box2").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box4").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box6").style.fontSize = "50px";
     CONTAINER10.style.alignItems = "center";
 });
 
@@ -176,6 +194,10 @@ alignitemsend.addEventListener("click", function () {
     alignitemscenter.style.color = "#ffffff";
     alignitemsbase.style.color = "#ffffff";
     this.style.color = "#ffd700";
+    CONTAINER10.querySelector(".box1").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box2").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box4").style.fontSize = "50px";
+    CONTAINER10.querySelector(".box6").style.fontSize = "50px";
     CONTAINER10.style.alignItems = "flex-end";
 });
 
@@ -191,6 +213,8 @@ alignitemsbase.addEventListener("click", function () {
     CONTAINER10.querySelector(".box6").style.fontSize = "110px";
     CONTAINER10.style.alignItems = "baseline";
 });
+
+/* Align-Content Section */
 
 aligncontentstretch.addEventListener("click", function () {
     aligncontentstart.style.color = "#ffffff";
@@ -250,4 +274,49 @@ aligncontentaround.addEventListener("click", function () {
     aligncontentbetween.style.color = "#ffffff";
     this.style.color = "#ffd700";
     CONTAINER11.style.alignContent = "space-around";
+});
+
+alignselfstretch.addEventListener("click", function () {
+    alignselfstart.style.color = "#ffffff";
+    alignselfcenter.style.color = "#ffffff";
+    alignselfend.style.color = "#ffffff";
+    alignselfbaseline.style.color = "#ffffff";
+    this.style.color = "#ffd700";
+    document.querySelector(".container12 .box1").style.alignSelf = "stretch";
+});
+
+alignselfstart.addEventListener("click", function () {
+    alignselfstretch.style.color = "#ffffff";
+    alignselfcenter.style.color = "#ffffff";
+    alignselfend.style.color = "#ffffff";
+    alignselfbaseline.style.color = "#ffffff";
+    this.style.color = "#ffd700";
+    document.querySelector(".container12 .box1").style.alignSelf = "flex-start";
+});
+
+alignselfcenter.addEventListener("click", function () {
+    alignselfstretch.style.color = "#ffffff";
+    alignselfstart.style.color = "#ffffff";
+    alignselfend.style.color = "#ffffff";
+    alignselfbaseline.style.color = "#ffffff";
+    this.style.color = "#ffd700";
+    document.querySelector(".container12 .box1").style.alignSelf = "center";
+});
+
+alignselfend.addEventListener("click", function () {
+    alignselfstretch.style.color = "#ffffff";
+    alignselfstart.style.color = "#ffffff";
+    alignselfcenter.style.color = "#ffffff";
+    alignselfbaseline.style.color = "#ffffff";
+    this.style.color = "#ffd700";
+    document.querySelector(".container12 .box1").style.alignSelf = "flex-end";
+});
+
+alignselfbaseline.addEventListener("click", function () {
+    alignselfstretch.style.color = "#ffffff";
+    alignselfstart.style.color = "#ffffff";
+    alignselfcenter.style.color = "#ffffff";
+    alignselfend.style.color = "#ffffff";
+    this.style.color = "#ffd700";
+    document.querySelector(".container12 .box1").style.alignSelf = "baseline";
 });
