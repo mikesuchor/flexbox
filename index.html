@@ -18,26 +18,35 @@
         </h1>
     </header>
     <main>
-        <section>
+        <section id="display">
             <h2>Display</h2>
             <p>Below is an inline flexbox container, it is an inline element and takes up the width of its flex items.</p>
-            <p><span class="cssprop" id="inlineflex">display: inline-flex</span><span class="cssprop" id="flex">display: flex</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="inlineflex">inline-flex</div>
+                <div class="cssprop" id="flex">flex</div>
+            </div>
             <div class="container container1">
                 <div class="box box1">1</div>
             </div>
         </section>
 
-        <section>
+        <section id="flex-direction">
             <h2>Flex-Direction</h2>
             <p>Below is the default flex-direction property, with main axis left to right and cross axis top to bottom.</p>
-            <p><span class="cssprop" id="flexdirrow">flex-direction: row</span><span class="cssprop" id="flexdirrowrev">flex-direction: row-reverse</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="flexdirrow">row</div>
+                <div class="cssprop" id="flexdirrowrev">row-reverse</div>
+            </div>
             <div class="container container2">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
                 <div class="box box3">3</div>
             </div>
             <p>Below is the flex-direction: column property, with main axis top to bottom and cross axis right to left.</p>
-            <p><span class="cssprop" id="flexdircol">flex-direction: column</span><span class="cssprop" id="flexdircolrev">flex-direction: column-reverse</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="flexdircol">column</div>
+                <div class="cssprop" id="flexdircolrev">column-reverse</div>
+            </div>
             <div class="container container3">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -45,10 +54,14 @@
             </div>
         </section>
         
-        <section>
+        <section id="flex-wrap">
             <h2>Flex-Wrap</h2>
             <p>Below is the default flex-wrap property, with flex items fitting themselves into 1 row.</p>
-            <p><span class="cssprop" id="flexwrapno">flex-wrap: nowrap</span><span class="cssprop" id="flexwrap">flex-wrap: wrap</span><span class="cssprop" id="flexwraprev">flex-wrap: wrap-reverse</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="flexwrapno">nowrap</div>
+                <div class="cssprop" id="flexwrap">wrap</div>
+                <div class="cssprop" id="flexwraprev">wrap-reverse</div>
+            </div>
             <div class="container container4">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -59,11 +72,13 @@
             </div>
         </section>
         
-        <section>
+        <section id="flex-grow">
             <h2>Flex, Flex-Grow, Flex-Shrink & Flex-Basis</h2>
             <p>The flex property combines 3 values (flex: flex-grow flex-shrink flex-basis).<br>
                 Flex-grow specifies how much of the available space the flex item should take in the flex container, with the default being 0.</p>
-            <p><span class="cssprop">flex-grow: <#></span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop">flex-grow: <#></div>
+            </div>
             <div class="container container5">
                 <div class="box box1">0</div>
                 <div class="box box2">3</div>
@@ -71,7 +86,9 @@
                 <div class="box box4">2</div>
             </div>
             <p>Flex-shrink specifies how much the flex item will shrink relative to other flex items in the flex container when there isn't enough space, with the default being 1.</p>
-            <p><span class="cssprop">flex-shrink: <#></span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop">flex-shrink: <#></div>
+            </div>
             <div class="container container6">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -79,7 +96,9 @@
                 <div class="box box4">6</div>
             </div>
             <p>Flex-basis specifies the intial size of the flex item, with the default being auto.</p>
-            <p><span class="cssprop">flex-basis: <#></span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop">flex-basis: <#></div>
+            </div>
             <div class="container container7">
                 <div class="box box1">a</div>
                 <div class="box box2">200</div>
@@ -89,10 +108,13 @@
                 <div class="box box6">a</div>
             </div>
         </section>
-        <section>
+
+        <section id="order">
             <h2>Order</h2>
             <p>The order property specifies the order of the flex item relative to the other flex items in the same container as shown by the box numbers.</p>
-            <p><span class="cssprop">order: <#></span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop">order: <#></div>
+            </div>
             <div class="container container8">
                 <div class="box box1">0</div>
                 <div class="box box2">-3</div>
@@ -103,11 +125,17 @@
             </div>
         </section>
         
-        <section>
+        <section id="justify-content">
             <h2>Justify-Content</h2>
-            <p>The justify-content property aligns the flex items on the main axis, aligned by default to the left.</p>
+            <p>The justify-content property aligns the flex items on the main axis.</p>
             <p>The space-between value divides the empty space and inserts it between the flex items.</p>
-            <p><span class="cssprop" id="justifycontentstart">justify-content: flex-start</span><span class="cssprop" id="justifycontentcenter">justify-content: center</span><span class="cssprop" id="justifycontentend">justify-content: flex-end</span><span class="cssprop" id="justifycontentbetween">justify-content: space-between</span><span class="cssprop" id="justifycontentaround">justify-content: space-around</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="justifycontentstart">flex-start</div>
+                <div class="cssprop" id="justifycontentcenter">center</div>
+                <div class="cssprop" id="justifycontentend">flex-end</div>
+                <div class="cssprop" id="justifycontentbetween">space-between</div>
+                <div class="cssprop" id="justifycontentaround">space-around</div>
+            </div>
             <div class="container container9">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -118,11 +146,17 @@
             </div>
         </section>
         
-        <section>
+        <section id="align-items">
             <h2>Align-Items</h2>
-            <p>The align-items property specifies the alignment for flex items inside the container, by default stretched to fit.</p>
+            <p>The align-items property specifies the alignment for flex items inside the container.</p>
             <p>The baseline value aligns all flex items along the bottom of the font.</p>
-            <p><span class="cssprop" id="alignitemsstretch">align-items: stretch</span><span class="cssprop" id="alignitemsstart">align-items: flex-start</span><span class="cssprop" id="alignitemscenter">align-items: center</span><span class="cssprop" id="alignitemsend">align-items: flex-end</span><span class="cssprop" id="alignitemsbase">align-items: baseline</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="alignitemsstretch">stretch</div>
+                <div class="cssprop" id="alignitemsstart">flex-start</div>
+                <div class="cssprop" id="alignitemscenter">center</div>
+                <div class="cssprop" id="alignitemsend">flex-end</div>
+                <div class="cssprop" id="alignitemsbase">baseline</div>
+            </div>
             <div class="container container10">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -133,10 +167,17 @@
             </div>
         </section>
 
-        <section>
+        <section id="align-content">
             <h2>Align-Content</h2>
-            <p>The align-content property, working with flex-wrap, aligns lines of flex items, by default stretched.</p>
-            <p><span class="cssprop" id="aligncontentstretch">align-content: stretch</span><span class="cssprop" id="aligncontentstart">align-content: flex-start</span><span class="cssprop" id="aligncontentcenter">align-content: center</span><span class="cssprop" id="aligncontentend">align-content: flex-end</span><span class="cssprop" id="aligncontentbetween">align-content: space-between</span><span class="cssprop" id="aligncontentaround">align-content: space-around</span></p>
+            <p>The align-content property, working with flex-wrap, aligns lines of flex items.</p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="aligncontentstretch">stretch</div>
+                <div class="cssprop" id="aligncontentstart">flex-start</div>
+                <div class="cssprop" id="aligncontentcenter">center</div>
+                <div class="cssprop" id="aligncontentend">flex-end</div>
+                <div class="cssprop" id="aligncontentbetween">space-between</div>
+                <div class="cssprop" id="aligncontentaround">space-around</div>
+            </div>
             <div class="container container11">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -148,10 +189,16 @@
             </div>
         </section>
 
-        <section>
+        <section id="align-self">
             <h2>Align-Self</h2>
             <p>The align-self property sets the alignment for a flex item inside the flex container.</p>
-            <p><span class="cssprop">align-self: stretch</span></p>
+            <div class="csspropcontainer">
+                <div class="cssprop" id="alignselfstretch">stretch</div>
+                <div class="cssprop" id="alignselfstart">flex-start</div>
+                <div class="cssprop" id="alignselfcenter">center</div>
+                <div class="cssprop" id="alignselfend">flex-end</div>
+                <div class="cssprop" id="alignselfbaseline">baseline</div>
+            </div>
             <div class="container container12">
                 <div class="box box1">1</div>
                 <div class="box box2">2</div>
@@ -164,13 +211,10 @@
     </main>
     <footer>
         <p>Created by Michael Suchorolski with help from Roger Kondrat</p>
-<<<<<<< HEAD
         <p>Inspired by Wes Bos' "What The Flexbox?!" <a href="https://flexbox.io/">https://flexbox.io/</a></p>
         <p><i class="fa fa-copyright" aria-hidden="true"></i> 2017</p>
-=======
         <p><a href="mailto:mikesuchor@gmail.com">mikesuchor@gmail.com</a></p>
         <p><i class="fa fa-copyright" aria-hidden="true"> 2017</i></p>
->>>>>>> e0621ff98293efcebc8346efb294b64a21f60081
         <p>
             <a href="https://github.com/mikesuchor"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
             <a href="http://twitter.com/mikesuchor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
