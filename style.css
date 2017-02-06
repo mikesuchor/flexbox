@@ -80,56 +80,56 @@ section::after {
 
 .container3 {flex-direction: column;}
 
-.container4 .box {width: 33.33333333333%;}
+.container4 .box {width: 33.33333%;}
 
-.container5 {margin-bottom: 5px;}
-.container5 .box1 {flex-grow: 0;}
-.container5 .box3 {flex-grow: 1;}
-.container5 .box2 {flex-grow: 3;}
-.container5 .box4  {flex-grow: 2;}
+.container5 {justify-content: flex-start;}
+.container5 .box {width: 8%;}
 
-.container6 {margin-bottom: 5px;}
-.container6 .box {flex-basis: 400px;}
-.container6 .box1, .container6 .box3 {flex-shrink: 1;}
-.container6 .box2 {flex-shrink: 2;}
-.container6 .box4 {flex-shrink: 6;}
-
-.container7 {margin-bottom: 5px;}
-.container7 .box {flex: 1;}
-.container7 .box2 {flex-basis: 200px;}
-.container7 .box4 {flex-basis: 300px;}
-
-.container8 .box {flex: 1;}
-.container8 .box1 {order: 0;}
-.container8 .box2 {order: -3;}
-.container8 .box3 {order: 2;}
-.container8 .box4 {order: 1;}
-.container8 .box5 {order: -2;}
-.container8 .box6 {order: -1;}
-
-.container9 {justify-content: flex-start;}
-.container9 .box {width: 8%;}
-
-.container10 {
+.container6 {
     align-items: stretch;
     height: 150px;
 }
-.container10 .box {flex: 1;}
+.container6 .box {flex: 1;}
 
-.container11 {
+.container7 {
     flex-wrap: wrap;
     line-height: 100px;
     height: 400px;
     align-content: stretch;
 }
-.container11 .box {width: 33.33333%;}
+.container7 .box {width: 33.33333%;}
 
-.container12 {
+.container8 {
     height: 200px;
     align-items: flex-start;
 }
-.container12 .box {width: 33.33333%;}
-.container12 .box1 {align-self: stretch;}
+.container8 .box {width: 33.33333%;}
+.container8 .box1 {align-self: stretch;}
+
+.container9 {margin-bottom: 5px;}
+.container9 .box1 {flex-grow: 0;}
+.container9 .box3 {flex-grow: 1;}
+.container9 .box2 {flex-grow: 3;}
+.container9 .box4  {flex-grow: 2;}
+
+.container10 {margin-bottom: 5px;}
+.container10 .box {flex-basis: 400px;}
+.container10 .box1, .container6 .box3 {flex-shrink: 1;}
+.container10 .box2 {flex-shrink: 2;}
+.container10 .box4 {flex-shrink: 6;}
+
+.container11 {margin-bottom: 5px;}
+.container11 .box {flex: 1;}
+.container11 .box2 {flex-basis: 200px;}
+.container11 .box4 {flex-basis: 300px;}
+
+.container12 .box {flex: 1;}
+.container12 .box1 {order: 0;}
+.container12 .box2 {order: -3;}
+.container12 .box3 {order: 2;}
+.container12 .box4 {order: 1;}
+.container12 .box5 {order: -2;}
+.container12 .box6 {order: -1;}
 
 .box1 {background-color: #ffd700;}
 .box2 {background-color: #000000;}
